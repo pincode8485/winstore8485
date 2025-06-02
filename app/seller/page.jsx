@@ -13,7 +13,7 @@ const AddProduct = () => {
   const [files, setFiles] = useState([]);
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
-  const [category, setCategory] = useState('Earphone');
+  const [category, setCategory] = useState('Electric Guitar');
   const [price, setPrice] = useState('');
   const [offerPrice, setOfferPrice] = useState('');
 
@@ -43,7 +43,7 @@ const AddProduct = () => {
         setFiles([]);
         setName('');
         setDescription('');
-        setCategory('Earphone');
+        setCategory('Electric Guitar');
         setPrice('');
         setOfferPrice('');
       } else {
@@ -128,12 +128,12 @@ const AddProduct = () => {
               onChange={(e) => setCategory(e.target.value)}
               defaultValue={category}
             >
-              <option value="Earphone">Earphone</option>
-              <option value="Headphone">Headphone</option>
-              <option value="Watch">Watch</option>
-              <option value="Smartphone">Smartphone</option>
-              <option value="Laptop">Laptop</option>
-              <option value="Camera">Camera</option>
+              <option value="Electric Guitar">Electric Guitar</option>
+              <option value="Accoustic Guitar">Accoustic Guitar</option>
+              <option value="Electric Bass">Electric Bass</option>
+              <option value="Amps & Effects">Amps & Effects</option>
+              <option value="Drum Sets">Drum Sets</option>
+              <option value="Recording">Camera</option>
               <option value="Accessories">Accessories</option>
             </select>
           </div>
